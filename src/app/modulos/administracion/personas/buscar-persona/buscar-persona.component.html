@@ -1,0 +1,31 @@
+<a routerLink="/administracion/crear-persona" class="btn btn-primary">Nueva Persona</a>
+<table class="table responsive">
+  <thead>
+    <tr>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
+      <th>Email</th>
+      <th>Edad</th>
+      <th>Fecha Nacimiento</th>
+      <th>Sueldo</th>
+      
+      <th>Editar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of listadoPersonas">
+      <td>{{p.nombres}}</td>
+      <td>{{p.apellidos}}</td>
+      <td>{{p.telefono}}</td>
+      <td>{{p.direccion}}</td>
+      <td>{{p.email}}</td>
+      <td>{{p.edad}}</td>
+      <td>{{p.fecha_nacimiento}}</td>
+      <td>{{p.sueldo}}</td>
+      
+      <td><a routerLink="/administracion/editar-persona/{{p.id}}" class="btn btn-primary">Editar Persona</a></td>
+    </tr>
+  </tbody>
+</table>
