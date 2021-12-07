@@ -10,8 +10,8 @@
       <th>Edad</th>
       <th>Fecha Nacimiento</th>
       <th>Sueldo</th>
-      
       <th>Editar</th>
+      <th>Eliminar</th>
     </tr>
   </thead>
   <tbody>
@@ -26,6 +26,7 @@
       <td>{{p.sueldo}}</td>
       
       <td><a routerLink="/administracion/editar-persona/{{p.id}}" class="btn btn-primary">Editar Persona</a></td>
+      <td><a routerLink="/administracion/eliminar-persona/{{p.id}}" class="btn btn-primary">Eliminar Persona</a></td>
     </tr>
   </tbody>
 </table>

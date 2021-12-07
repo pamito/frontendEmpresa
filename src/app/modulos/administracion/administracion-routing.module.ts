@@ -28,6 +28,11 @@ const routes: Routes = [
     canActivate: [ValidadorSesionGuard]
   }, 
   {
+    path: 'eliminar-persona/:id',
+    component: EliminarPersonaComponent,
+    canActivate: [ValidadorSesionGuard]
+  },
+  {
     path: 'buscar-persona',
     component: BuscarPersonaComponent,
     canActivate: [ValidadorSesionGuard]
